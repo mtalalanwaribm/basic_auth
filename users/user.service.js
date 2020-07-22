@@ -2,20 +2,36 @@
 const consumers = [
                 {
                     id: 1,
-                    username: 'test1',
-                    password: 'test1',
-                    firstName: 'Test1',
-                    lastName: 'User1',
+                    username: 'consumer1',
+                    password: 'consumer1',
+                    firstName: 'consumer1',
+                    lastName: 'Consumer1',
                     scope: "consumer"
                 }]
 const merchants = [
     {
         id: 2,
-        username: 'test2',
-        password: 'test2',
-        firstName: 'Test2',
-        lastName: 'User2',
+        username: 'merchant1',
+        password: 'merchant1',
+        firstName: 'merchant1',
+        lastName: 'merchant1',
         scope: "merchant"
+    },
+    {
+        id: 3,
+        username: 'admin1',
+        password: 'admin1',
+        firstName: 'admin1',
+        lastName: 'admin1',
+        scope: "admin"
+    },
+    {
+        id: 4,
+        username: 'operator1',
+        password: 'operator1',
+        firstName: 'operator1',
+        lastName: 'operator1',
+        scope: "operator"
     }
     ];
 
