@@ -1,0 +1,4 @@
+applications:
+  - name: sample-auth
+    random-route: true
+    memory: 128M
