@@ -28,8 +28,8 @@ function authenticate(req, res, next) {
                 delete user.password;
                 req.user = user;
                 res.setHeader('x-selected-scope', user.scope);
-                res.setHeader('API-OAUTH-METADATA-FOR-PAYLOAD',JSON.stringify(user));
-                res.setHeader('API-OAUTH-METADATA-FOR-ACCESSTOKEN',JSON.stringify(user));
+                res.setHeader('X-API-OAUTH-METADATA-FOR-PAYLOAD',JSON.stringify(user));
+                res.setHeader('X-API-OAUTH-METADATA-FOR-ACCESSTOKEN',JSON.stringify(user));
                 console.log("Request Headers:\n");
                 console.log(req.headers);
                 console.log("Request User:\n");
