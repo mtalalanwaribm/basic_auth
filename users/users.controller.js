@@ -30,10 +30,12 @@ function authenticate(req, res, next) {
                 res.setHeader('x-selected-scope', user.scope);
                 res.setHeader('X-API-OAUTH-METADATA-FOR-PAYLOAD',JSON.stringify(user));
                 res.setHeader('X-API-OAUTH-METADATA-FOR-ACCESSTOKEN',JSON.stringify(user));
+                res.setHeader('X-API-Authenticated-Credential',user.username);
                 console.log("Request Headers:\n");
                 console.log(req.headers);
                 console.log("Request User:\n");
                 console.log(req.user);
+                res.profile= {"var1":"value1"};
                 res.json(user);
             } else {
                 res.status(401).json({ message: 'Username or password is incorrect' })
